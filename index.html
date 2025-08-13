@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Weather App — UI Only</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Top Bar / Search -->
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">☀️</span>
+        <span class="title">Weather</span>
+      </div>
+
+      <form class="search" role="search" aria-label="Search city">
+        <input
+          type="text"
+          placeholder="Search city (e.g., Mumbai)"
+          aria-label="City"
+        />
+        <button type="button" aria-label="Search">Search</button>
+      </form>
+
+      <div class="toggles" aria-label="Display settings">
+        <label class="switch" title="Dark mode (UI only)">
+          <input type="checkbox" disabled />
+          <span>🌓</span>
+        </label>
+        <label class="switch" title="°C / °F (UI only)">
+          <input type="checkbox" disabled />
+          <span>°C/°F</span>
+        </label>
+      </div>
+    </header>
+
+    <!-- Current Weather Card -->
+    <section class="current" aria-label="Current weather">
+      <div class="current-left">
+        <div class="location-time">
+          <h2 class="city">Mumbai, IN</h2>
+          <p class="datetime">Tue, 13 Aug • 9:30 PM</p>
+        </div>
+
+        <div class="temp-row">
+          <div class="temp">
+            <span class="temp-value">31</span><span class="temp-unit">°C</span>
+          </div>
+          <div class="icon-desc">
+            <!-- simple inline SVG sun with few rays -->
+            <svg class="wx-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <g class="rays">
+                <line x1="12" y1="1" x2="12" y2="4"></line>
+                <line x1="12" y1="20" x2="12" y2="23"></line>
+                <line x1="1" y1="12" x2="4" y2="12"></line>
+                <line x1="20" y1="12" x2="23" y2="12"></line>
+                <line x1="4.2" y1="4.2" x2="6.2" y2="6.2"></line>
+                <line x1="17.8" y1="17.8" x2="19.8" y2="19.8"></line>
+                <line x1="17.8" y1="6.2" x2="19.8" y2="4.2"></line>
+                <line x1="4.2" y1="19.8" x2="6.2" y2="17.8"></line>
+              </g>
+            </svg>
+            <p class="desc">Sunny</p>
+          </div>
+        </div>
+
+        <ul class="mini-facts">
+          <li><span>Feels like</span><strong>33°C</strong></li>
+          <li><span>Humidity</span><strong>62%</strong></li>
+          <li><span>Wind</span><strong>14 km/h</strong></li>
+          <li><span>UV</span><strong>7 (High)</strong></li>
+        </ul>
+      </div>
+
+      <div class="current-right">
+        <div class="hi-lo">
+          <div>
+            <span>High</span>
+            <strong>33°C</strong>
+          </div>
+          <div>
+            <span>Low</span>
+            <strong>27°C</strong>
+          </div>
+        </div>
+
+        <!-- Progress-style meters (decorative) -->
+        <div class="meters">
+          <div class="meter">
+            <span>Precipitation</span>
+            <div class="bar" aria-hidden="true"><i style="width: 20%"></i></div>
+            <em>20%</em>
+          </div>
+          <div class="meter">
+            <span>Cloud Cover</span>
+            <div class="bar" aria-hidden="true"><i style="width: 15%"></i></div>
+            <em>15%</em>
+          </div>
+          <div class="meter">
+            <span>Pressure</span>
+            <div class="bar" aria-hidden="true"><i style="width: 65%"></i></div>
+            <em>1006 hPa</em>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Forecast -->
+    <section class="forecast" aria-label="5-day forecast">
+      <h3>Next 5 Days</h3>
+      <div class="days">
+        <article class="day">
+          <p class="label">Wed</p>
+          <div class="ico cloudy" aria-hidden="true"></div>
+          <p clas
