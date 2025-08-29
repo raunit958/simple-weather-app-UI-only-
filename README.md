@@ -1,4 +1,5 @@
-weather app UI only using HTML and CSS  
+# 🌦️ Simple Weather App UI (HTML + CSS)
+
 This Simple Weather App (UI-only) project is a front-end design built with pure HTML and CSS, showing a modern, responsive interface for displaying weather information.
 
 Key Points:
