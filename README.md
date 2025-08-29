@@ -3,7 +3,6 @@
 This Simple Weather App (UI-only) project is a front-end design built with pure HTML and CSS, showing a modern, responsive interface for displaying weather information.
 
 Key Points:
-![Uploading Screenshot 2025-08-29 130233.png…]()
 
 Static UI — no live weather API integration (dummy placeholder data).
 
